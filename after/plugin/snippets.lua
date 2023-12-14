@@ -39,29 +39,7 @@ ls.setup({
     enable_autosnippets = true,
     store_selection_keys = "<Tab>",
 })
--- 'recursive' dynamic snippet. Expands to some text followed by itself.
-local rec_ls
-rec_ls = function()
-	return sn(
-		nil,
-		c(1, {
-			-- Order is important, sn(...) first would cause infinite loop of expansion.
-			t(""),
-			sn(nil, { t({ "", "\t\\item " }), i(1), d(2, rec_ls, {}) }),
-		})
-	)
-end
 
--- Latex
-ls.add_snippets("tex", {
-    s("ls", {
-        t({ "\\begin{itemize}", "\t\\item " }),
-        i(1),
-        d(2, rec_ls, {}),
-        t({ "", "\\end{itemize}" }),
-    }),
-}, {
-    key = "tex",
-})
+require("luasnip/loaders/from_vscode").load({ paths = { "~/.local/share/nvim/site/pack/packer/start/friendly-snippets" } })
 
 

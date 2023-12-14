@@ -45,6 +45,7 @@ return require('packer').startup(function(use)
    	-- install jsregexp (optional!:).
    	run = "make install_jsregexp"
  })
+  use 'rafamadriz/friendly-snippets'
 end)
 
 
