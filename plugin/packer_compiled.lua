@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/home/alexsky2/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
-  ["friendly-snippets"] = {
-    loaded = true,
-    path = "/home/alexsky2/.local/share/nvim/site/pack/packer/start/friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
-  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/alexsky2/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -143,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/alexsky2/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ultisnips = {
+    loaded = true,
+    path = "/home/alexsky2/.local/share/nvim/site/pack/packer/start/ultisnips",
+    url = "https://github.com/SirVer/ultisnips"
   },
   undotree = {
     loaded = true,
