@@ -74,6 +74,11 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  Coqtail = {
+    loaded = true,
+    path = "/home/alexsky2/.local/share/nvim/site/pack/packer/start/Coqtail",
+    url = "https://github.com/whonore/Coqtail"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/alexsky2/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -148,6 +153,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/alexsky2/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-coq-plugin"] = {
+    loaded = true,
+    path = "/home/alexsky2/.local/share/nvim/site/pack/packer/start/vim-coq-plugin",
+    url = "https://github.com/jlapolla/vim-coq-plugin"
   },
   ["vim-fugitive"] = {
     loaded = true,
