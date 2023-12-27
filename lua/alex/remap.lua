@@ -58,6 +58,6 @@ smap <silent><expr> <S-Tab> luasnip#jumpable(-1) ? '<Plug>luasnip-jump-prev' : '
 inoremap <C-f> <Esc>: silent exec '.!inkscape-figures create "'.getline('.').'" "'.b:vimtex.root.'/figures/"'<CR><CR>:w<CR>
 nnoremap <C-f> : silent exec '!inkscape-figures edit "'.b:vimtex.root.'/figures/" > /dev/null 2>&1 &'<CR><CR>:redraw!<CR>
 
-nnoremap <C-s> : ! for FILE in ./figures/*.svg; do Inkscape -D $FILE -o .pdf --export-latex; done <CR>
+nnoremap <C-s> : ! save_inkscape.sh<CR>
 ]]
 
