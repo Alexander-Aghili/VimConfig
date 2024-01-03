@@ -27,6 +27,18 @@ else:
 `$2
 endsnippet
 
+snippet ali "Align" iA
+\begin{align}
+$1
+\end{align}
+endsnippet
+
+snippet al* "Align*" iA
+\begin{align*}
+$1
+\end{align*}
+endsnippet
+
 # Quick Math Shortcuts
 
 ## Superscripts
@@ -46,6 +58,14 @@ snippet td "superscript" iA
 ^{$1}$0
 endsnippet
 
+snippet inf "infinity" iA
+\infty
+endsnippet
+
+snippet par "partial" iA
+\partial
+endsnippet
+
 #Auto scripts
 snippet '([A-Za-z])(\d)' "auto subscript" wrA
 `!p snip.rv = match.group(1)`_`!p snip.rv = match.group(2)`
@@ -60,10 +80,14 @@ snippet // "Fraction" iA
 \\frac{$1}{$2}$0
 endsnippet
 
+snippet '((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)/' "Fraction" wrA
+\\frac{`!p snip.rv = match.group(1)`}{$1}$0
+endsnippet
+
 # Latex Shortcuts
 snippet latexinit "Latex Initialize" iA
 \documentclass[]{article}
-\input{~/University/Latex/preamble.tex}
+\input{/home/alexsky2/University/Latex/preamble.tex}
 
 \begin{document}
 	$1

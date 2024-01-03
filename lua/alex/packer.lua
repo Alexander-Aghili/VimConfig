@@ -39,6 +39,7 @@ return require('packer').startup(function(use)
   }
   use 'lervag/vimtex'
   use 'SirVer/ultisnips'
+  use 'whonore/Coqtail'
 end)
 
 

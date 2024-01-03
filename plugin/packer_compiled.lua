@@ -154,11 +154,6 @@ _G.packer_plugins = {
     path = "/home/alexsky2/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
-  ["vim-coq-plugin"] = {
-    loaded = true,
-    path = "/home/alexsky2/.local/share/nvim/site/pack/packer/start/vim-coq-plugin",
-    url = "https://github.com/jlapolla/vim-coq-plugin"
-  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/alexsky2/.local/share/nvim/site/pack/packer/start/vim-fugitive",
